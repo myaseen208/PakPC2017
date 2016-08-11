@@ -19,5 +19,6 @@ can be applied using Griffing's approach.
 Use **devtools** to install the development version from Github:
 
 ```{r}
+if(!require("devtools")) install.packages("devtools")
 devtools::install_github('MYaseen208/DiallelAnalysisR', build_vignettes = TRUE)
 ```
