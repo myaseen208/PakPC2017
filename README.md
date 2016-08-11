@@ -22,3 +22,6 @@ Use **devtools** to install the development version from Github:
 if(!require("devtools")) install.packages("devtools")
 devtools::install_github('MYaseen208/DiallelAnalysisR', build_vignettes = TRUE)
 ```
+
+## License
+This package is free and open source software, licensed under GPL.
