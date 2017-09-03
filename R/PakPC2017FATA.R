@@ -26,7 +26,7 @@
 #'  }
 #' @seealso 
 #'    \code{\link{PakPC2017City10}}
-#'  , \code{\link{Balochistan}}
+#'  , \code{\link{PakPC2017Balochistan}}
 #'  , \code{\link{PakPC2017Islamabad}}
 #'  , \code{\link{PakPC2017KPK}}
 #'  , \code{\link{PakPC2017Pak}}

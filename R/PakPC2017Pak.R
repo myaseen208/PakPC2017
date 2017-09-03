@@ -1,9 +1,9 @@
 #' @title Pakistan data from Pakistan Population Census 2017 
-#' @name   PakPC2017Pakistan
+#' @name   PakPC2017Pak
 #' @docType data
 #' @keywords datasets
-#' @usage data(PakPC2017Pakistan)
-#' @description \code{PakPC2017Pakistan} Pakistan data from Pakistan Population Census 2017.
+#' @usage data(PakPC2017Pak)
+#' @description \code{PakPC2017Pak} Pakistan data from Pakistan Population Census 2017.
 #' @format A \code{data.table} and  \code{data.frame} with 12 obs. of  10 variables.
 #' @details
 #'        \itemize{
@@ -28,12 +28,12 @@
 #'  , \code{\link{PakPC2017FATA}}
 #'  , \code{\link{PakPC2017Islamabad}}
 #'  , \code{\link{PakPC2017KPK}}
-#'  , \code{\link{PakPC2017Pakistan}}
+#'  , \code{\link{PakPC2017Pak}}
 #'  , \code{\link{PakPC2017Punjab}}
 #'  , \code{\link{PakPC2017Sindh}}
 #' @importFrom data.table data.table
 #' @examples
-#' data(PakPC2017Pakistan)
+#' data(PakPC2017Pak)
 #' library(data.table)
 #' PakPC2017Res <- 
 #'           c(
@@ -42,10 +42,10 @@
 #'             )
 #' 
 #' 
-#' PakPC2017Pakistan[
+#' PakPC2017Pak[
 #'        , j        = lapply(.SD, sum, na.rm = TRUE) 
-#'        , by       = .(Division, District)
+#'        , by       = .(AdminUnits)
 #'        , .SDcols  = PakPC2017Res
-#'        ][order(Division, District)]
+#'        ][order(AdminUnits)]
 #' 
 NULL
