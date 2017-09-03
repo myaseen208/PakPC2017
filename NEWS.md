@@ -1,4 +1,4 @@
-# Changes in DiallelAnalysisR Version 0.1.1
+# Changes in PakPC2017 Version 0.1
 ## New Features 
 
-* First version of DiallelAnalysisR: 
+* First version of PakPC2017: 
