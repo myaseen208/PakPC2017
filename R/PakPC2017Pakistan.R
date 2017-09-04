@@ -25,8 +25,8 @@
 #' \item Pakistan Population Census 2017 (\url{http://www.pbscensus.gov.pk/}).
 #'  }
 #' @seealso 
-#'  , \code{\link{PakPC2017Balochistan}}
-#'    \code{\link{PakPC2017City10}}
+#'   \code{\link{PakPC2017Balochistan}}
+#'  ,  \code{\link{PakPC2017City10}}
 #'  , \code{\link{PakPC2017FATA}}
 #'  , \code{\link{PakPC2017Islamabad}}
 #'  , \code{\link{PakPC2017KPK}}

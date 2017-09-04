@@ -50,8 +50,8 @@ PakPC2017Pakistan[
  }
 }
 \seealso{
-, \code{\link{PakPC2017Balochistan}}
-   \code{\link{PakPC2017City10}}
+\code{\link{PakPC2017Balochistan}}
+ ,  \code{\link{PakPC2017City10}}
  , \code{\link{PakPC2017FATA}}
  , \code{\link{PakPC2017Islamabad}}
  , \code{\link{PakPC2017KPK}}
