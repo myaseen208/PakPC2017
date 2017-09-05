@@ -1,10 +1,10 @@
 Package: PakPC2017
 Type: Package
 Title: Pakistan Population Census 2017
-Version: 0.2
+Version: 0.1.0
 Authors@R: c(person(c("Muhammad", "Yaseen"),  email = "myaseen208@gmail.com", role = c("aut", "cre")))
 Maintainer: Muhammad Yaseen <myaseen208@gmail.com>
-Description: Provides Data sets and functions for Pakistan Population Census 2017.
+Description: Provides Data Sets and Functions for Pakistan Population Census 2017.
 Depends: R (>= 3.1)
 Imports: 
   data.table,
