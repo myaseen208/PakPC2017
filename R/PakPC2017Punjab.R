@@ -5,25 +5,27 @@
 #' @usage data(PakPC2017Punjab)
 #' @description \code{PakPC2017Punjab} Punjab Province data from Pakistan Population Census 2017.
 #' @format A \code{data.table} and  \code{data.frame} with 72 obs. of  12 variables.
-#' @details
-#'        \itemize{
-#'        \item Province Province of Pakistan
-#'        \item Division Division of Punjab Province of Pakitan
-#'        \item District District of Punjab Province of Pakitan
-#'        \item ResStatus Residental Status
-#'        \item Households No. of Households
-#'        \item Male Male Population
-#'        \item Female Female Population
-#'        \item Transgender Transgender Population
-#'        \item Pop2017 Total Population in 2017
-#'        \item Pop1998 Total Population in 1998
-#'        \item SexRatio2017 Sex Ration accoring to Pakistan Population Census 2017
-#'        \item GrowthRate 1998-2017 Average Annual Growth Rate
+#' \describe{
+#'        \item{\code{Province}}{Province of Pakistan}
+#'        \item{\code{Division}}{Division of Balochistan Province of Pakitan}
+#'        \item{\code{District}}{District of Balochistan Province of Pakitan}
+#'        \item{\code{ResStatus}}{Residental Status}
+#'        \item{\code{Households}}{No. of Households}
+#'        \item{\code{Male}}{Male Population}
+#'        \item{\code{Female}}{Female Population}
+#'        \item{\code{Transgender}}{Transgender Population}
+#'        \item{\code{Pop2017}}{Total Population in 2017}
+#'        \item{\code{Pop1998}}{Total Population in 1998}
+#'        \item{\code{SexRatio2017}}{Sex Ration accoring to Pakistan Population Census 2017}
+#'        \item{\code{GrowthRate}}{1998-2017 Average Annual Growth Rate}
 #'        }
+#'        
 #' @author Muhammad Yaseen (\email{myaseen208@@gmail.com})
+#' 
 #' @references \enumerate{
 #' \item Pakistan Population Census 2017 (\url{http://www.pbscensus.gov.pk/}).
 #'  }
+#'
 #' @seealso 
 #'  , \code{\link{PakPC2017Balochistan}}
 #'    \code{\link{PakPC2017City10}}
@@ -38,11 +40,7 @@
 #' data(PakPC2017Punjab)
 #' library(data.table)
 #' PakPC2017Res <- 
-#'           c(
-#'               "Households", "Male", "Female", "Transgender"
-#'             , "Pop2017", "Pop1998", "SexRatio2017", "GrowthRate"
-#'             )
-#' 
+#'  c("Households", "Male", "Female", "Transgender", "Pop2017", "Pop1998")
 #' 
 #' PakPC2017Punjab[
 #'        , j        = lapply(.SD, sum, na.rm = TRUE) 
