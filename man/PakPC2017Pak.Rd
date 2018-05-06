@@ -27,16 +27,6 @@ data(PakPC2017Pak)
 }
 \examples{
 data(PakPC2017Pak)
-library(data.table)
-PakPC2017Res <- 
- c("Households", "Male", "Female", "Transgender", "Pop2017", "Pop1998")
-
-PakPC2017Pak[
-       , j        = lapply(.SD, sum, na.rm = TRUE) 
-       , by       = .(AdminUnits)
-       , .SDcols  = PakPC2017Res
-       ][order(AdminUnits)]
-
 }
 \references{
 \enumerate{

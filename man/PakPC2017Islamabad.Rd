@@ -27,17 +27,6 @@ data(PakPC2017Islamabad)
 }
 \examples{
 data(PakPC2017Islamabad)
-library(data.table)
-PakPC2017Res <- 
- c("Households", "Male", "Female", "Transgender", "Pop2017", "Pop1998")
-
-
-PakPC2017Islamabad[
-       , j        = lapply(.SD, sum, na.rm = TRUE) 
-       , by       = .(Division, District)
-       , .SDcols  = PakPC2017Res
-       ][order(Division, District)]
-
 }
 \references{
 \enumerate{

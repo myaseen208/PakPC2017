@@ -1,4 +1,4 @@
-#' @title Balochistan Province data from Pakistan Population Census 2017 
+#' @title Balochistan Province data from Pakistan Population Census 2017
 #' @name   PakPC2017Balochistan
 #' @docType data
 #' @keywords datasets
@@ -19,14 +19,14 @@
 #'        \item{\code{SexRatio2017}}{Sex Ration accoring to Pakistan Population Census 2017}
 #'        \item{\code{GrowthRate}}{1998-2017 Average Annual Growth Rate}
 #'        }
-#'        
+#'
 #' @author Muhammad Yaseen (\email{myaseen208@@gmail.com})
-#' 
+#'
 #' @references \enumerate{
 #' \item Pakistan Population Census 2017 (\url{http://www.pbscensus.gov.pk/}).
 #'  }
-#'  
-#' @seealso 
+#'
+#' @seealso
 #'    \code{\link{PakPC2017City10}}
 #'  , \code{\link{PakPC2017FATA}}
 #'  , \code{\link{PakPC2017Islamabad}}
@@ -35,19 +35,9 @@
 #'  , \code{\link{PakPC2017Pakistan}}
 #'  , \code{\link{PakPC2017Punjab}}
 #'  , \code{\link{PakPC2017Sindh}}
-#'  
-#' @importFrom data.table data.table
-#' 
+#'
+#'
 #' @examples
 #' data(PakPC2017Balochistan)
-#' library(data.table)
-#' PakPC2017Res <- 
-#'  c("Households", "Male", "Female", "Transgender", "Pop2017", "Pop1998")
-#' 
-#' PakPC2017Balochistan[
-#'        , j        = lapply(.SD, sum, na.rm = TRUE) 
-#'        , by       = .(Division, District)
-#'        , .SDcols  = PakPC2017Res
-#'        ][order(Division, District)]
-#' 
+
 NULL
