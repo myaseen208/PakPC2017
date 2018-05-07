@@ -142,13 +142,15 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>library</span>(<span class='no'>PakPC2017</span>)
-<span class='fu'>library</span>(<span class='no'>dplyr</span>)
-<span class='fu'>library</span>(<span class='no'>magrittr</span>)</div><div class='output co'>#&gt; <span class='message'></span>
-#&gt; <span class='message'>Attaching package: ‘magrittr’</span></div><div class='output co'>#&gt; <span class='message'>The following object is masked from ‘package:purrr’:</span>
+<span class='fu'>library</span>(<span class='no'>dplyr</span>)</div><div class='output co'>#&gt; <span class='message'></span>
+#&gt; <span class='message'>Attaching package: ‘dplyr’</span></div><div class='output co'>#&gt; <span class='message'>The following object is masked from ‘package:ggplot2’:</span>
 #&gt; <span class='message'></span>
-#&gt; <span class='message'>    set_names</span></div><div class='output co'>#&gt; <span class='message'>The following object is masked from ‘package:tidyr’:</span>
+#&gt; <span class='message'>    vars</span></div><div class='output co'>#&gt; <span class='message'>The following objects are masked from ‘package:stats’:</span>
 #&gt; <span class='message'></span>
-#&gt; <span class='message'>    extract</span></div><div class='input'><span class='fu'>data</span>(<span class='st'>"PakPC2017Tehsil"</span>)
+#&gt; <span class='message'>    filter, lag</span></div><div class='output co'>#&gt; <span class='message'>The following objects are masked from ‘package:base’:</span>
+#&gt; <span class='message'></span>
+#&gt; <span class='message'>    intersect, setdiff, setequal, union</span></div><div class='input'><span class='fu'>library</span>(<span class='no'>magrittr</span>)
+<span class='fu'>data</span>(<span class='st'>"PakPC2017Tehsil"</span>)
 
 <span class='no'>PakPC2017Tehsil</span> <span class='kw'>%&gt;%</span>
   <span class='fu'><a href='http://dplyr.tidyverse.org/reference/group_by.html'>group_by</a></span>(<span class='no'>Province</span>, <span class='no'>Division</span>, <span class='no'>District</span>) <span class='kw'>%&gt;%</span>
@@ -158,27 +160,27 @@
 #&gt; # Groups:   Province, Division [?]
 #&gt;    Province    Division District Pop1998 Pop2017
 #&gt;    &lt;chr&gt;       &lt;chr&gt;    &lt;chr&gt;      &lt;dbl&gt;   &lt;dbl&gt;
-#&gt;  1 Balochistan Kalat    Awaran   118173. 121680.
-#&gt;  2 Balochistan Kalat    Kalat    237834. 412232.
-#&gt;  3 Balochistan Kalat    Kharan    96900. 156152.
-#&gt;  4 Balochistan Kalat    Khuzdar  417466. 802207.
-#&gt;  5 Balochistan Kalat    Lasbela  312695. 574292.
-#&gt;  6 Balochistan Kalat    Mastung  150650. 266461.
-#&gt;  7 Balochistan Kalat    Washuk   110009. 176206.
-#&gt;  8 Balochistan Mekran   Gwadar   185498. 263514.
-#&gt;  9 Balochistan Mekran   Kech     413204. 909116.
-#&gt; 10 Balochistan Mekran   Panjgur  234051. 316385.
+#&gt;  1 Balochistan Kalat    Awaran    118173  121680
+#&gt;  2 Balochistan Kalat    Kalat     237834  412232
+#&gt;  3 Balochistan Kalat    Kharan     96900  156152
+#&gt;  4 Balochistan Kalat    Khuzdar   417466  802207
+#&gt;  5 Balochistan Kalat    Lasbela   312695  574292
+#&gt;  6 Balochistan Kalat    Mastung   150650  266461
+#&gt;  7 Balochistan Kalat    Washuk    110009  176206
+#&gt;  8 Balochistan Mekran   Gwadar    185498  263514
+#&gt;  9 Balochistan Mekran   Kech      413204  909116
+#&gt; 10 Balochistan Mekran   Panjgur   234051  316385
 #&gt; # ... with 119 more rows</div><div class='input'>
  <span class='no'>PakPC2017Tehsil</span> <span class='kw'>%&gt;%</span>
   <span class='fu'><a href='http://dplyr.tidyverse.org/reference/filter.html'>filter</a></span>(<span class='no'>District</span> <span class='kw'>==</span> <span class='st'>"Faisalabad"</span>)</div><div class='output co'>#&gt; # A tibble: 6 x 6
-#&gt;   Province Division   District   Tehsil             Pop1998  Pop2017
-#&gt;   &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;                &lt;dbl&gt;    &lt;dbl&gt;
-#&gt; 1 Punjab   Faisalabad Faisalabad Faisalabad City   2140346. 3237961.
-#&gt; 2 Punjab   Faisalabad Faisalabad Faisalabad Saddar  924110. 1465411.
-#&gt; 3 Punjab   Faisalabad Faisalabad Chak Jhumra        253806.  332461.
-#&gt; 4 Punjab   Faisalabad Faisalabad Sammundri          508637.  643068.
-#&gt; 5 Punjab   Faisalabad Faisalabad Tandlianwala       540802.  702733.
-#&gt; 6 Punjab   Faisalabad Faisalabad Jaranwala         1061846. 1492276.</div></pre>
+#&gt;   Province Division   District   Tehsil            Pop1998 Pop2017
+#&gt;   &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;               &lt;dbl&gt;   &lt;dbl&gt;
+#&gt; 1 Punjab   Faisalabad Faisalabad Faisalabad City   2140346 3237961
+#&gt; 2 Punjab   Faisalabad Faisalabad Faisalabad Saddar  924110 1465411
+#&gt; 3 Punjab   Faisalabad Faisalabad Chak Jhumra        253806  332461
+#&gt; 4 Punjab   Faisalabad Faisalabad Sammundri          508637  643068
+#&gt; 5 Punjab   Faisalabad Faisalabad Tandlianwala       540802  702733
+#&gt; 6 Punjab   Faisalabad Faisalabad Jaranwala         1061846 1492276</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
