@@ -42,7 +42,7 @@ navbar:
       text: Vignettes
       menu:
       - text: "An Introduction to PakPC2017"
-        href: vignettes/PakPC2017-Intro.pdf
+        href: articles/PakPC2017-Intro.pdf
     - icon: fa-newspaper-o
       text: News
       href: news/index.html
