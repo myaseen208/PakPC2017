@@ -4,7 +4,8 @@
 \name{PakPC2017Pak}
 \alias{PakPC2017Pak}
 \title{Pakistan data from Pakistan Population Census 2017}
-\format{A \code{data.table} and  \code{data.frame} with 12 obs. of  10 variables.
+\format{
+A \code{data.table} and  \code{data.frame} with 12 obs. of  10 variables.
 \describe{
        \item{\code{Province}}{Province of Pakistan}
        \item{\code{Division}}{Division of Balochistan Province of Pakitan}
@@ -18,7 +19,8 @@
        \item{\code{Pop1998}}{Total Population in 1998}
        \item{\code{SexRatio2017}}{Sex Ration accoring to Pakistan Population Census 2017}
        \item{\code{GrowthRate}}{1998-2017 Average Annual Growth Rate}
-       }}
+       }
+}
 \usage{
 data(PakPC2017Pak)
 }

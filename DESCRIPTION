@@ -14,10 +14,17 @@ Imports:
   dplyr,
   magrittr
 License: GPL-2
-URL: https://github.com/MYaseen208/PakPC2017
+URL: https://myaseen208.com/PakPC2017/
+     https://CRAN.R-project.org/package=PakPC2017
+BugReports: https://github.com/myaseen208/PakPC2017/issues
 LazyData: TRUE
-RoxygenNote: 6.0.1
+RoxygenNote: 7.3.2
+Encoding: UTF-8
 Suggests: 
     R.rsp,
     testthat
 VignetteBuilder: R.rsp
+Note: 1. School of Mathematical & Statistical Sciences, Clemson University, Clemson, South Carolina, USA
+      2. Department of Mathematics & Statistics, University of Agriculture Faisalabad, Faisalabad, Pakistan
+
+

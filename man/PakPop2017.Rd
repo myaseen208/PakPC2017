@@ -4,7 +4,8 @@
 \name{PakPop2017}
 \alias{PakPop2017}
 \title{Pakistan Population data from Pakistan Population Census 2017}
-\format{A \code{data.table} and  \code{data.frame} with 543 observations of  06 variables.
+\format{
+A \code{data.table} and  \code{data.frame} with 543 observations of  06 variables.
 \describe{
        \item{\code{Province}}{Provinces of Pakistan}
        \item{\code{Division}}{Divisions of Pakistan}
@@ -16,7 +17,8 @@
        \item{\code{BlockCode}}{Block Code}
        \item{\code{Pop2017}}{Population of census 2017}
        \item{\code{HH2017}}{Total House Holds}
-       }}
+       }
+}
 \usage{
 data(PakPop2017)
 }

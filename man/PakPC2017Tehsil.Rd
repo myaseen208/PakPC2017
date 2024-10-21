@@ -4,7 +4,8 @@
 \name{PakPC2017Tehsil}
 \alias{PakPC2017Tehsil}
 \title{Pakistan Tehsil data from Pakistan Population Census 2017}
-\format{A \code{data.table} and  \code{data.frame} with 543 observations of  06 variables.
+\format{
+A \code{data.table} and  \code{data.frame} with 543 observations of  06 variables.
 \describe{
        \item{\code{Province}}{Provinces of Pakistan}
        \item{\code{Division}}{Divisions of Pakistan}
@@ -12,7 +13,8 @@
        \item{\code{Tehsil}}{Tehsils of Pakistan}
        \item{\code{Pop1998}}{Population of census 1998}
        \item{\code{Pop2017}}{Population of census 2017}
-       }}
+       }
+}
 \usage{
 data(PakPC2017Tehsil)
 }
